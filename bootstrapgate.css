@@ -1,0 +1,76 @@
+.card1 {
+    background: url(https://img.delicious.com.au/QHse3Fdi/del/2022/09/la-lune-source-supplied-174784-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: larger;
+    color: grey;
+    padding-bottom: 50px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.titolo {
+    padding-bottom: 50px;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.description {
+    text-align: center;
+    padding-right: 70px;
+    padding-top: 30px;
+    text-decoration: underline;
+    font-family: 'Roboto Slab', serif;
+}
+
+.testo {
+    color: white;
+    font-size: large;
+    padding-top: 100px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.titolo2{
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    padding-top: 150px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.cit {
+    color: white;
+}
+
+.sottotitolo {
+    color: white;
+    font-size: xx-large;
+    padding-top: 200px;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.colonna {
+    padding-left: 150px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container-fluid {
+    padding: 0px !important;
+    margin: 0px !important;;
+}
+

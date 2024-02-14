@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrapgate.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white navbar-white">
+        <div class="container-fluid">
+            <svg id="logo-86" width="30" height="30" viewBox="0 0 40 40" fill="text-danger-emphasis" xmlns="http://www.w3.org/2000/svg"><path class="ccustom py-2" fill-rule="evenodd" clip-rule="evenodd" d="M25.5557 11.6853C23.9112 10.5865 21.9778 10 20 10V0C23.9556 0 27.8224 1.17298 31.1114 3.37061C34.4004 5.56823 36.9638 8.69181 38.4776 12.3463C39.9913 16.0008 40.3874 20.0222 39.6157 23.9018C38.844 27.7814 36.9392 31.3451 34.1421 34.1421C31.3451 36.9392 27.7814 38.844 23.9018 39.6157C20.0222 40.3874 16.0008 39.9913 12.3463 38.4776C8.69181 36.9638 5.56823 34.4004 3.37061 31.1114C1.17298 27.8224 0 23.9556 0 20H10C10 21.9778 10.5865 23.9112 11.6853 25.5557C12.7841 27.2002 14.3459 28.4819 16.1732 29.2388C18.0004 29.9957 20.0111 30.1937 21.9509 29.8078C23.8907 29.422 25.6725 28.4696 27.0711 27.0711C28.4696 25.6725 29.422 23.8907 29.8078 21.9509C30.1937 20.0111 29.9957 18.0004 29.2388 16.1732C28.4819 14.3459 27.2002 12.7841 25.5557 11.6853Z" fill="#58151c"></path><path class="ccustom" fill-rule="evenodd" clip-rule="evenodd" d="M10 5.16562e-07C10 1.31322 9.74135 2.61358 9.2388 3.82683C8.73625 5.04009 7.99966 6.14248 7.07107 7.07107C6.14249 7.99966 5.0401 8.73625 3.82684 9.2388C2.61358 9.74134 1.31322 10 5.4439e-06 10L5.00679e-06 20C2.62644 20 5.22716 19.4827 7.65368 18.4776C10.0802 17.4725 12.285 15.9993 14.1421 14.1421C15.9993 12.285 17.4725 10.0802 18.4776 7.65367C19.4827 5.22715 20 2.62643 20 -3.81469e-06L10 5.16562e-07Z" fill="#58151c"></path></svg>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-robot text-danger-emphasis fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse px-3" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-danger-emphasis mx-md-3" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-danger-emphasis mx-md-3" aria-current="page" href="#">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger-emphasis mx-md-3" href="#">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger-emphasis mx-md-3" href="#">Location</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Book a table
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered no-border">
+            <div class="modal-content border-0 rounded-0 bg-danger-subtle">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row mb-3">
+                            <div class="col-12 mb-3">
+                                <h3>Scegli cosa prenotare!</h3>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="tizio@gmail.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Tipologia di prodotto</option>
+                                            <option value="1">Pane</option>
+                                            <option value="2">Cornetti</option>
+                                            <option value="3">Focacce</option>
+                                            <option value="4">Dolci</option>
+                                        </select>
+                                    </div>
+                                    <label for="exampleInputEmail1" class="form-label">Lasciaci un commento!</label>
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                        <label for="floatingTextarea"></label>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Ricordami!</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-dark d-block ms-auto">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--card1-->
+    <main>
+        <div class="card1">
+            <p>La Lune French Bistro</p>
+            <h1 class="titolo"><strong>A Taste Of Paris</strong></h1>
+            <button type="button" class="btn btn-outline-dark btn-lg">Dine With Us</button>
+        </div>
+    </main> 
+    
+    <!--card2-->
+    <section>
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-4 col-md-4 col-sm-6">
+                    <img src="poster-tradizionale-pane-appena-sfornato.jpg.jpg" alt="immagine" width="300px" height="300px" class="rounded">
+                </div>
+                <div class="col-4 col-md-4 col-sm-6">
+                    <img src="poster-tradizionale-pane-appena-sfornato.jpg.jpg" alt="immagine" width="300px" height="300px" class="rounded">
+                </div>
+                <div class="col-4 col-md-4 col-sm-12">
+                    <h3><strong>A French Fling</strong></h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam assumenda accusantium harum quaerat officiis reprehenderit magnam architecto a perspiciatis quia dolorum, accusamus sint exercitationem explicabo, non odit sunt iusto soluta.</p>
+                    <a href="#" class="bcl btn btn-primary btn-lg float-end" role="button" aria-pressed="true">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    
+    <!--card3-->
+    <section>
+        <div class="container py-5 my-5">
+            <div class="row align-items-center">
+                <div class="col-4 col-md-4 col-sm-12 mb-3">
+                    <div class="card text-center border-0" style="width: 18rem;">
+                        <img src="colazione-salata-milano.jpg" class="card-img-top rounded" alt="immagine" width="300px" height="400px">
+                        <div class="card-body">
+                            <p class="card-text text-danger-emphasis text-uppercase text-decoration-underline">Mouthwatering Appetizers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 col-sm-12 mb-3">
+                    <div class="card text-center border-0" style="width: 18rem;">
+                        <img src="colazione-salata-milano.jpg" class="card-img-top rounded" alt="immagine" width="300px" height="400px">
+                        <div class="card-body">
+                            <p class="card-text text-danger-emphasis text-uppercase text-decoration-underline">Wholesome Mains</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 col-sm-12 mb-3">
+                    <div class="card text-center border-0" style="width: 18rem;">
+                        <img src="colazione-salata-milano.jpg" class="card-img-top rounded" alt="immagine" width="300px" height="400px">
+                        <div class="card-body">
+                            <p class="card-text text-danger-emphasis text-uppercase text-decoration-underline">Sweet Endings</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section> 
+        
+        <!--card4-->
+        <section class="container-fluid text-white bg-black" style="height: 700px;">
+            <div class="row mb-5">
+                <h3 class="col-12 text-center mt-5">LOVE FOR LA LUNE</h3>
+                <div class="row my-5">
+                    <div class="col-12 col-lg-4">
+                        <p class="display-5 my-4"><i class="bi bi-quote"></i></i></p>
+                        <h4 class="mb-5">TRANSPORTED TO PARIS</h4>
+                        <blockquote>One bite and I felt like I was back in France. Chef Ingrid and her team have outdone themselves!
+                        </blockquote>
+                        <p>- Teddy, Entrepreneur</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <p class="display-5 my-4"><i class="bi bi-quote"></i></p>
+                        <h4 class="mb-5">LOVELY BISTRO</h4>
+                        <blockquote>The ambience was great and the food even better! Simple recipes done well, with top-notch ingredients. Will be back!</blockquote>
+                        <p>- Dani, Mother</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <p class="display-5 my-4"><i class="bi bi-quote"></i></i></p>
+                        <h4 class="mb-5">TRANSPORTED TO PARIS</h4>
+                        <blockquote>Eating here made me miss Paris so much. What a treat! I will be bringing my client meetings here.
+                        </blockquote>
+                        <p>- Carly, Entrepreneur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        <!--card5-->
+        <footer  class="container-fluid">
+            
+            <div class="row align-items-center justifiy-content-between">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <img src="poster-tradizionale-pane-appena-sfornato.jpg.jpg" alt="immagine" width="700px" height="600px">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-2 colonna">
+                    <div class="mb-5 titoli">
+                        <h2>See you soon</h2>
+                    </div>
+                    <div class="mb-4 titoli">
+                        <h4>Phone Number</h4>
+                    </div>
+                    <div class="mb-4 testi">
+                        <p>1234567890</p>
+                    </div>
+                    <div class="mb-4 titoli">
+                        <h4>Email</h4>
+                    </div>
+                    <div class="mb-4 testi">
+                        <p>tizio@gmial.com</p>
+                    </div><div class="mb-4 titoli">
+                        <h4>Reastaurant</h4>
+                    </div>
+                    <div class="mb-4 testi">
+                        <p>Lorem 29, Ipsum</p>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+        
+        
+    </body>
+    </html>
